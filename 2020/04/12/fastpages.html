@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Fastpages | fastpages</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Fastpages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="1 登录自己的github账户，访问： https://github.com/fastai/fastpages ，找到下面这个蓝色的字并点击，" />
+<meta property="og:description" content="1 登录自己的github账户，访问： https://github.com/fastai/fastpages ，找到下面这个蓝色的字并点击，" />
+<link rel="canonical" href="https://fastpages.fast.ai/fastpagesJupyter/2020/04/12/fastpages.html" />
+<meta property="og:url" content="https://fastpages.fast.ai/fastpagesJupyter/2020/04/12/fastpages.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-04-12T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"1 登录自己的github账户，访问： https://github.com/fastai/fastpages ，找到下面这个蓝色的字并点击，","@type":"BlogPosting","url":"https://fastpages.fast.ai/fastpagesJupyter/2020/04/12/fastpages.html","dateModified":"2020-04-12T00:00:00-05:00","datePublished":"2020-04-12T00:00:00-05:00","headline":"Fastpages","mainEntityOfPage":{"@type":"WebPage","@id":"https://fastpages.fast.ai/fastpagesJupyter/2020/04/12/fastpages.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/fastpagesJupyter/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://fastpages.fast.ai/fastpagesJupyter/feed.xml" title="fastpages" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-57531313-5','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<link rel="shortcut icon" type="image/x-icon" href="/fastpagesJupyter/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Fastpages | fastpages</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Fastpages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="1 登录自己的github账户，访问： https://github.com/fastai/fastpages ，找到下面这个蓝色的字并点击，" />
+<meta property="og:description" content="1 登录自己的github账户，访问： https://github.com/fastai/fastpages ，找到下面这个蓝色的字并点击，" />
+<link rel="canonical" href="https://fastpages.fast.ai/fastpagesJupyter/2020/04/12/fastpages.html" />
+<meta property="og:url" content="https://fastpages.fast.ai/fastpagesJupyter/2020/04/12/fastpages.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-04-12T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"1 登录自己的github账户，访问： https://github.com/fastai/fastpages ，找到下面这个蓝色的字并点击，","@type":"BlogPosting","url":"https://fastpages.fast.ai/fastpagesJupyter/2020/04/12/fastpages.html","dateModified":"2020-04-12T00:00:00-05:00","datePublished":"2020-04-12T00:00:00-05:00","headline":"Fastpages","mainEntityOfPage":{"@type":"WebPage","@id":"https://fastpages.fast.ai/fastpagesJupyter/2020/04/12/fastpages.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://fastpages.fast.ai/fastpagesJupyter/feed.xml" title="fastpages" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-57531313-5','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/fastpagesJupyter/">fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/fastpagesJupyter/about/">About Me</a><a class="page-link" href="/fastpagesJupyter/search/">Search</a><a class="page-link" href="/fastpagesJupyter/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Fastpages</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-04-12T00:00:00-05:00" itemprop="datePublished">
+        Apr 12, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>1 登录自己的github账户，访问：<a href="https://github.com/fastai/fastpages"> https://github.com/fastai/fastpages</a> ，找到下面这个蓝色的字并点击，<img src="https://fastpages.fast.ai/fastpagesJupyter/assets/img/2020-04-12-fastpages/media/image1.tmp" alt="" /></p>
+
+<p>在自己的账户下生成一个仓库（仓库名不能使用<img src="https://fastpages.fast.ai/fastpagesJupyter/assets/img/2020-04-12-fastpages/media/image2.png" alt="" />），用于运行网页。</p>
+
+<p>2 稍等片刻（约30秒），你的github邮箱会收到一封邮件，指导你接下来的步骤。由于邮件是英文版，这里给出中文。请对照使用。</p>
+
+<p><img src="https://fastpages.fast.ai/fastpagesJupyter/assets/img/2020-04-12-fastpages/media/image3.tmp" alt="" /></p>
+
+<p><strong>在合并此PR之前</strong></p>
+
+<p>1创建ssh密钥对。打开此实用程序。选择：RSA和4096并将密码保留为空。单击蓝色按钮Generate SSH Keys。</p>
+
+<p>2导航到此链接并单击“添加新机密”。复制私钥并将其粘贴到值字段中。这包括“—开始RSA私钥—”和“—结束RSA私钥—”部分。在Name字段中，命名secret SSH_DEPLOY_密钥。</p>
+
+<p>3导航到此链接并单击“添加部署密钥”按钮。将步骤1中的公钥粘贴到“密钥”框中。在标题中，可以任意命名键，例如fastpages键。最后，请确保单击“允许写访问”旁边的复选框（如下图所示），然后单击“添加密钥”保存密钥。</p>
+
+<p><strong>合并此PR后的预期</strong></p>
+
+<p>GitHub操作将构建您的站点，这将需要2-3分钟才能完成。这将在您将更改推送到存储库的主分支时发生。如果愿意，可以在repo的Actions选项卡上监视此日志。</p>
+
+<p>自述文件上的GH页面状态徽章最终将显示为绿色，表示您的第一次构建成功。</p>
+
+<p>您可以在存储库设置的GitHub页面部分监视站点的状态。</p>
+
+<p>如果您没有使用自定义域，您的网站将出现在：</p>
+
+<p>https://xxxxxx.github.io/FastPagesUpyter</p>
+
+<p>可选：使用自定义域</p>
+
+<p>合并此PR后，在repo的根目录中添加一个名为CNAME的文件。例如，fastpages博客位于https://fastpages.fast.ai，这意味着我们的CNAME包含以下内容：</p>
+
+<p>快速页面.fast.ai</p>
+
+<p>更改/u config.yml文件中的url和baseurl参数以反映自定义域。</p>
+
+<p>想知道如何设置自定义域吗？看这篇文章。必须将CNAME文件添加到主分支的根目录中，才能使文章中的说明正常工作。</p>
+
+<p>问题</p>
+
+<p>如有任何问题或功能要求，请使用fastai论坛中的nbdev\&amp;blogging频道。</p>
+
+<p>您可以在以下位置在线查看、评论或合并此请求：</p>
+
+<p>https://github.com/EasonQYS/fastpagesJupyter/pull/1网站</p>
+
+<p>下面是操作过程截图：</p>
+
+<p><img src="https://fastpages.fast.ai/fastpagesJupyter/assets/img/2020-04-12-fastpages/media/image4.png" alt="" /></p>
+
+<p><img src="https://fastpages.fast.ai/fastpagesJupyter/assets/img/2020-04-12-fastpages/media/image5.tmp" alt="" /></p>
+
+<p><img src="https://fastpages.fast.ai/fastpagesJupyter/assets/img/2020-04-12-fastpages/media/image6.tmp" alt="" /></p>
+
+<p>点击Add key后需要输入github密码。</p>
+
+<p><img src="https://fastpages.fast.ai/fastpagesJupyter/assets/img/2020-04-12-fastpages/media/image7.tmp" alt="" /></p>
+
+<p>绿色对勾表示初始化完成。</p>
+
+<p>在<a href="https://github.com/EasonQYS/fastpagesJupyter/settings">https://github.com/EasonQYS/fastpagesJupyter/settings</a> settings页面下滑找到</p>
+
+<p><img src="https://fastpages.fast.ai/fastpagesJupyter/assets/img/2020-04-12-fastpages/media/image8.tmp" alt="" /></p>
+
+<p>选择master branch，等待<a href="https://github.com/EasonQYS/fastpagesJupyter/actions">https://github.com/EasonQYS/fastpagesJupyter/actions</a> 显示成功。</p>
+
+<p>我在使用是，提示无法建立，原因是The tag `twitter` on line 9 in `_posts/2020-03-06-fastpages-actions.md` is not a recognized Liquid tag. 无法识别twitter</p>
+
+<p>，因为官方支持的没有twitter，我采用的方法是根据提示删除类似&lt;div class='jekyll-twitter-plugin'&gt;&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;Altair 4.0 is released! <a href="https://t.co/PCyrIOTcvv">https://t.co/PCyrIOTcvv</a><br />Try it with:<br /><br />  pip install -U altair<br /><br />The full list of changes is at <a href="https://t.co/roXmzcsT58">https://t.co/roXmzcsT58</a> …read on for some highlights. <a href="https://t.co/vWJ0ZveKbZ">pic.twitter.com/vWJ0ZveKbZ</a>&lt;/p&gt;— Jake VanderPlas (@jakevdp) <a href="https://twitter.com/jakevdp/status/1204765621767901185?ref_src=twsrc%5Etfw">December 11, 2019</a>&lt;/blockquote&gt;
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+&lt;/div&gt;这样的语句，反正国内也用不了。一共有两句，可以使用Ctrl+F搜索Twitter，查找这样的句子。</p>
+
+<p>这个链接给出了另一个解决方案，屏蔽掉Twitter。没有试过。</p>
+
+<p><a href="https://stackoverflow.com/questions/28511946/the-tag-img-is-not-a-recognized-liquid-tag-github-pages-with-octopress">https://stackoverflow.com/questions/28511946/the-tag-img-is-not-a-recognized-liquid-tag-github-pages-with-octopress</a></p>
+
+<p>下面这个链接提到：4、修改_config.yml。没有试过。</p>
+
+<p><a href="https://blog.csdn.net/weixin_34349320/article/details/91375176#%E4%BF%AE%E6%94%B9%60_config.yml%60">https://blog.csdn.net/weixin_34349320/article/details/91375176#%E4%BF%AE%E6%94%B9%60_config.yml%60</a></p>
+
+<p>至此，网站已经可以显示了。</p>
+
+<p><img src="https://fastpages.fast.ai/fastpagesJupyter/assets/img/2020-04-12-fastpages/media/image9.tmp" alt="" /></p>
+
+<p>3 修改_config.yml</p>
+
+<p>为了让页面显示更美观，以及修改超链接为正确内容，我们可能要做一下修改。</p>
+
+<p>下面给出中文翻译：需要修改部分标黄</p>
+
+<p>#欢迎来到杰基尔！</p>
+
+<p>#</p>
+
+<p>#此配置文件用于影响整个博客的设置。</p>
+
+<p>#</p>
+
+<p>#如果您需要有关YAML语法的帮助，以下是一些快速参考：</p>
+
+<p>#https://learn the web.algonquindesign.ca/topics/markdown yaml备忘单/#yaml</p>
+
+<p>#https://learnxinyminutes.com/docs/yaml/</p>
+
+<p>标题：fastpages</p>
+
+<p>描述：一个易于使用的博客平台，支持Jupyter笔记本电脑。</p>
+
+<p>github_用户名：fastai</p>
+
+<p>#如果回购名称与baseurl相同，则可以注释下面的行</p>
+
+<p>github_repo:“快速页面”</p>
+
+<p>#可选：如果使用自定义域，则重写baseurl和url</p>
+
+<p>#注意：去掉这个值后面的/后面的。</p>
+
+<p>网址：“https://fastpages.fast.ai”#网站的基本主机名和协议，例如http://example.com</p>
+
+<p>###########################################################</p>
+
+<p>#########baseurl的特殊说明###############</p>
+
+<p>#</p>
+
+<p>####场景一：如果没有自定义域#####</p>
+
+<p>#-如果不使用自定义域，则必须将baseurl*设置为回购名称</p>
+
+<p>#</p>
+
+<p>####场景二：如果你有一个自定义域#####</p>
+
+<p>#一。如果您的域没有子路径，则此值保留为“</p>
+
+<p>#2。如果您的域确实有子路径，则必须在该值前面加上/而不是在结尾加上/。</p>
+
+<p>#例如：</p>
+
+<p>#“”有效</p>
+
+<p>#“/blog”有效</p>
+
+<p>#“/blog/site/”无效（/结尾处）</p>
+
+<p>#“/blog/site”有效</p>
+
+<p>#“blog/site”无效（因为不是以/开头）</p>
+
+<p>#</p>
+
+<p>#三。必须用与此处设置的值相同但不带引号的值替换操作文件/settings.ini中的参数“baseurl”。</p>
+
+<p>#</p>
+
+<p>baseurl:“”站点的子路径，例如“/blog”。</p>
+
+<p>#Github和twitter是可选的：</p>
+
+<p>最低要求：</p>
+
+<p>社交链接：</p>
+
+<p>推特：fastdotai</p>
+
+<p>github:法士泰</p>
+
+<p>#将此设置为true以获得乳胶数学公式支持</p>
+
+<p>使用数学：</p>
+
+<p>#将此设置为true可在主页的标题下显示日志摘要。</p>
+
+<p>显示说明：真</p>
+
+<p>#如果存在图像预览，请将此设置为true以在主页上显示图像预览</p>
+
+<p>显示图像：错误</p>
+
+<p>#将此设置为true以在每个帖子上显示标记</p>
+
+<p>显示标记：真</p>
+
+<p>#在这里添加你的谷歌分析ID如果你有并且想要使用它</p>
+
+<p>谷歌分析：UA-57531313-5</p>
+
+<p>排除：</p>
+
+<p>-docker-compose.yml文件</p>
+
+<p>-动作.yml</p>
+
+<p>-生成文件</p>
+
+<p>#此设置允许您将页面组织在“页面”文件夹中</p>
+
+<p>包括：</p>
+
+<p>-_页</p>
+
+<p>#这指定默认情况下为笔记本帖子打开的徽章。</p>
+
+<p>默认标志：</p>
+
+<p>github:正确</p>
+
+<p>活页夹：正确</p>
+
+<p>科拉布：真的</p>
+
+<p>#下面的所有东西都应该单独留下。修改可能会破坏快速页面</p>
+
+<p>未来：真的</p>
+
+<p>主题：minima</p>
+
+<p>插件：</p>
+
+<p>-果冻饲料</p>
+
+<p>-吉基尔主义者</p>
+
+<p>-吉基尔八字形</p>
+
+<p>-托克果冻</p>
+
+<p>-jekyll twitter插件</p>
+
+<p>-jekyll相关链接</p>
+
+<p>-jekyll搜索引擎优化标签</p>
+
+<p>-杰基尔远程主题</p>
+
+<p>-杰基尔·帕吉纳特</p>
+
+<p>-杰基尔网站地图</p>
+
+<p>#见https://jekyllrb.com/docs/pagination/</p>
+
+<p>#要使分页工作，不能在repo的根目录中有index.md，而必须将此文件重命名为index.html</p>
+
+<p>页码：15</p>
+
+<p>分页路径：/页码：num/</p>
+
+<p>远程主题：jekyll/minima</p>
+
+<p>标题来自标题：</p>
+
+<p>启用：真</p>
+
+<p>片名：真</p>
+
+<p>集合：真</p>
+
+<p>荧光笔：胭脂</p>
+
+<p>降价：克拉姆敦</p>
+
+<p>克拉姆敦：</p>
+
+<p>数学引擎：katex</p>
+
+<p>输入：GFM</p>
+
+<p>自动识别：真</p>
+
+<p>硬包装：错误</p>
+
+<p>语法高亮：胭脂色</p>
+
+<p>相关修改参考见截图</p>
+
+<p><img src="https://fastpages.fast.ai/fastpagesJupyter/assets/img/2020-04-12-fastpages/media/image10.tmp" alt="" /></p>
+
+<p><img src="https://fastpages.fast.ai/fastpagesJupyter/assets/img/2020-04-12-fastpages/media/image11.tmp" alt="" /></p>
+
+<p><img src="https://fastpages.fast.ai/fastpagesJupyter/assets/img/2020-04-12-fastpages/media/image12.tmp" alt="" /></p>
+
+<p>4 由于CNAME报错，直接删除其内容。</p>
+
+<p>现在网页正常显示了。</p>
+
+<p><img src="https://fastpages.fast.ai/fastpagesJupyter/assets/img/2020-04-12-fastpages/media/image13.tmp" alt="" /></p>
+
+<p>5 上传Jupyter文件</p>
+
+<p>所有ipynb文件都在_notebooks目录下，其中的readme要求命名格式为YYYY-MM-DD-*.ipynb，注意，很容易忘记最后一个破折号，翻译中文如下：</p>
+
+<p>自动将Jupyter笔记本转换为帖子</p>
+
+<p>fastpages将自动转换Jupyter笔记本作为博客文章保存到此目录中！</p>
+
+<p>必须使用命名约定YYYY-MM-DD-*.ipynb保存笔记本。有效文件名的示例如下：</p>
+
+<p>2020-01-28-My-First-Post.ipynb公司</p>
+
+<p>2012-09-12-how-to-write-a-blog.ipynb</p>
+
+<p>如果未能正确命名文件，fastpages将自动尝试通过预先设置笔记本的最后修改日期来解决此问题。但是，建议您自己正确命名文件以提高透明度。</p>
+
+<p>有关更多详细信息，请参阅使用Jupyter撰写博客文章。</p>
+
+<p>但是也有要求，第一个单元格内要以Markdown形式写：</p>
+
+<p><img src="https://fastpages.fast.ai/fastpagesJupyter/assets/img/2020-04-12-fastpages/media/image14.tmp" alt="" /></p>
+
+<p>这在readme中可以看到。其中文含义如下：</p>
+
+<p><img src="https://fastpages.fast.ai/fastpagesJupyter/assets/img/2020-04-12-fastpages/media/image15.tmp" alt="" /></p>
+
+<p><img src="https://fastpages.fast.ai/fastpagesJupyter/assets/img/2020-04-12-fastpages/media/image16.tmp" alt="" /></p>
+
+<p>写完上传至_notebooks目录。如果是本地克隆文件夹，那么记得同步至github云端。</p>
+
+<p>上传之后等待一段时间，即可在博客上看到这篇文章。</p>
+
+<p>6 类似的，Markdown文件在_posts目录下，也能自动转换。</p>
+
+<p>同样，有格式要求。（支持中文名）<img src="https://fastpages.fast.ai/fastpagesJupyter/assets/img/2020-04-12-fastpages/media/image17.tmp" alt="" /></p>
+
+<p>当然，少一点也行，这是一个例子：</p>
+
+<p>在_posts目录下创建正确命名的md文档，写入后保存。若在本地写好，记得同步（克隆）至云端。</p>
+
+<p>-–</p>
+
+<p>layout: post</p>
+
+<p>title: “Welcome to Jekyll!”</p>
+
+<p>-–</p>
+
+<p># Welcome</p>
+
+<p>**Hello world**, this is my first Jekyll blog post.</p>
+
+<p>I hope you like it!</p>
+
+<p><img src="https://fastpages.fast.ai/fastpagesJupyter/assets/img/2020-04-12-fastpages/media/image18.tmp" alt="" /></p>
+
+<p>更多用法参考：<a href="https://jekyllrb.com/docs/posts/">https://jekyllrb.com/docs/posts/</a></p>
+
+<p>7 此外，_docs还能转换docx文件，方法类似。</p>
+
+  </div><a class="u-url" href="/fastpagesJupyter/2020/04/12/fastpages.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/fastpagesJupyter/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/fastpagesJupyter/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/fastpagesJupyter/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/EasonQYS" title="EasonQYS"><svg class="svg-icon grey"><use xlink:href="/fastpagesJupyter/assets/minima-social-icons.svg#github"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
