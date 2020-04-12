@@ -19,7 +19,7 @@ Recently, I've been able to use GitHub Actions to build some very unique tools f
 
 [fastpages](https://github.com/fastai/fastpages) is an automated, open-source blogging platform with enhanced support for Jupyter notebooks.  You save your notebooks, markdown, or Word docs into a directory on GitHub, and they automatically become blog posts. Read the announcement below:
 
-<center>{% twitter https://twitter.com/jeremyphoward/status/1232059428238581760?s=20 %}</center>
+
 
 ## Machine Learning Ops
 
