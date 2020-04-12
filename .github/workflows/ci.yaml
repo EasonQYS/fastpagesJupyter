@@ -41,5 +41,5 @@ jobs:
       if: github.event_name	== 'push'
       uses: peaceiris/actions-gh-pages@v3
       with:
-        deploy_key: ${{ secrets.SSH_DEPLOY_KEY }}
+        deploy_key: ${{ secrets.key }}
         publish_dir: ./_site
