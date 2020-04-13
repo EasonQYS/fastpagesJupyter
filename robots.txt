@@ -1,1 +1,1 @@
-Sitemap: https://fastpages.fast.ai/fastpagesJupyter/sitemap.xml
+Sitemap: /fastpagesJupyter/sitemap.xml
