@@ -10,21 +10,21 @@ title: 中文fastpages模板
 description: 便捷实用的博客
 github_username: EasonQYS  # 你的用户名
 # you can comment the below line out if your repo name is not different than your baseurl
-github_repo: "fastpagesJupyter"
+github_repo: "fastpagesJupyter" #你的仓库名
 
-# OPTIONAL: override baseurl and url if using a custom domain
-# Note: leave out the trailing / from this value.  不要在最后加斜杠/ 
+# OPTIONAL: override baseurl and url if using a custom domain 可选项，如果你有自己的域名，并且需要绑定到该网站
+# Note: leave out the trailing / from this value.  写下域名，不要在最后加斜杠/ 
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 ###########################################################
 #########  Special Instructions for baseurl ###############
 #
 #### Scenario One: If you do not have a Custom Domain #####
-#    -  if you are not using a custom domain, the baseurl *must* be set to your repo name
+#    -  if you are not using a custom domain, the baseurl *must* be set to your repo name 如果没有自己的域名，那么下面就写仓库名
 # 
 ####  Scenario Two: If you have a Custom Domain #####
-# 1. If your domain does NOT have a subpath, this leave this value as ""
-# 2. If your domain does have a subpath, you must preceed the value with a / and NOT have a / at the end.  
+# 1. If your domain does NOT have a subpath, this leave this value as ""     如果有域名，且域名下没有子目录，则留空
+# 2. If your domain does have a subpath, you must preceed the value with a / and NOT have a / at the end.  否则写子目录名
 #      For example: 
 #           "" is valid
 #           "/blog"        is valid
@@ -34,7 +34,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #
 # 3. You must replace the parameter `baseurl` in _action_files/settings.ini with the same value as you set here but WITHOUT QUOTES.
 #
-baseurl: "/fastpagesJupyter" # the subpath of your site, e.g. "/blog".网站子路径，一般是仓库名
+baseurl: "/fastpagesJupyter" # the subpath of your site, e.g. "/blog".网站子路径，一般是仓库名或留空或子目录
 
 # Github and twitter are optional:可以在网页底部显示自己的推特和github链接
 minima:
