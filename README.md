@@ -121,7 +121,9 @@
 
 # FAQ
 
-- **Q:** Where are the markdown files in `_posts/` that are generated from my Jupyter notebooks or word documents?  **A:** The GitHub Actions workflow in this repo converts your notebook and word documents to markdown on the fly before building your site, but never commits these intermediate markdown files to this repo.  This is in order to save you from the annoyance of your local environment being constantly out of sync with your repository.  You can optionally see these intermediate markdown files by setting the `BOOL_SAVE_MARKDOWN` and `SSH_DEPLOY_KEY` inputs to the fastpages action in your `.github/workflows/ci.yaml` file as follows:
+- **Q:** Where are the markdown files in `_posts/` that are generated from my Jupyter notebooks or word documents?  
+
+- **A:** The GitHub Actions workflow in this repo converts your notebook and word documents to markdown on the fly before building your site, but never commits these intermediate markdown files to this repo.  This is in order to save you from the annoyance of your local environment being constantly out of sync with your repository.  You can optionally see these intermediate markdown files by setting the `BOOL_SAVE_MARKDOWN` and `SSH_DEPLOY_KEY` inputs to the fastpages action in your `.github/workflows/ci.yaml` file as follows:
 
 ```yaml
     ...
@@ -135,13 +137,11 @@
     ...
 ```
 
-- **Q:** Can I use `fastpages` for Jekyll docs sites or for things that are not Jekyll blog posts?  **A:** At the moment, `fastpages` is a highly opinionated solution that works only for Jekyll blog posts.  If you want to write documentation for your module or library with Jupyter notebooks, we suggest you use [fastai/nbdev](https://github.com/fastai/nbdev) which is expressly built for this purpose.
+- **Q:** Can I use `fastpages` for Jekyll docs sites or for things that are not Jekyll blog posts?  
 
-- **Q:** What is the difference between [fast_template](https://github.com/fastai/fast_template) and fastpages?  Which one should I use?  **A:** Because `fastpages` is more flexible and extensible, we recommend using it where possible. `fast_template` may be a better option for getting folks blogging who have no technical expertise at all, and will only be creating posts using Github's integrated online editor.
+- **A:** At the moment, `fastpages` is a highly opinionated solution that works only for Jekyll blog posts.  If you want to write documentation for your module or library with Jupyter notebooks, we suggest you use [fastai/nbdev](https://github.com/fastai/nbdev) which is expressly built for this purpose.
 
-# Customizing Fastpages
+- **Q:** What is the difference between [fast_template](https://github.com/fastai/fast_template) and fastpages?  Which one should I use?  
+- **A:** Because `fastpages` is more flexible and extensible, we recommend using it where possible. `fast_template` may be a better option for getting folks blogging who have no technical expertise at all, and will only be creating posts using Github's integrated online editor.
 
-fastpages builds upon the [minima theme](https://github.com/jekyll/minima).  If you want to customize the styling or layout of fastpages, you can find instructions [in minima's README](https://github.com/jekyll/minima/blob/master/README.md).  It is a good idea to read the full contents of the README to understand the directory structure.  Furthermore, it is a good idea to have a basic understanding of Jekyll before customizing your theme.  For those new to Jekyll, [the official docs](https://jekyllrb.com/docs/) are a good place to start.  Concretely, you can override css in fastpages in `_sass/minima/custom-styles.scss`.
-
-**If you choose to make customizations to fastpages**  It is possible that customizations you make could collide with current or future versions of fastpages and we recommend doing so only if you feel sufficiently comfortable with HTML and CSS.
 
