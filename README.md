@@ -9,13 +9,13 @@
 
 # 欢迎使用 `fastpages`
 
-> 一款简单的博客网站，支持 Jupyter notebooks, Word docs, 以及 Markdown.
+> 一款简单的博客网站，支持 Jupyter 笔记本, Word 文档, 以及 Markdown.
 
 >原作链接在此：[fastai/fastpages](https://github.com/fastai/fastpages/)，是英文的。
 
 ![](images/diagram.png)
 
-`fastpages` uses [GitHub Actions](https://github.com/features/actions) to simplify the process of creating [Jekyll blog posts](https://jekyllrb.com/) on [GitHub Pages](https://pages.github.com/) from a variety of input formats.
+`fastpages` 用 [GitHub Actions](https://github.com/features/actions)来简化多种格式文档（Jupyter 笔记本, Word 文档, 以及 Markdown）在[GitHub Pages](https://pages.github.com/)上转换为HTML格式的[Jekyll博客帖](https://jekyllrb.com/)的过程。
 
 ### `fastpages` 提供以下功能:
 
@@ -43,8 +43,8 @@
 
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [Welcome To `fastpages`](#welcome-to-fastpages)
-	- [Setup Instructions](#setup-instructions)
+- [欢迎使用 `fastpages`](#欢迎使用fastpages)
+	- [初始化指导](#setup-instructions)
 	- [Customizing Blog Posts With Front Matter](#customizing-blog-posts-with-front-matter)
 		- [Configure Title & Summary](#configure-title--summary)
 		- [Table of Contents](#table-of-contents)
