@@ -43,8 +43,8 @@
 
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [欢迎使用 `fastpages`](#欢迎使用fastpages)
-	- [初始化指导](#setup-instructions)
+- [欢迎使用 `fastpages`](#欢迎使用-fastpages)
+	- [初始化指导](#初始化指导)
 	- [Customizing Blog Posts With Front Matter](#customizing-blog-posts-with-front-matter)
 		- [Configure Title & Summary](#configure-title--summary)
 		- [Table of Contents](#table-of-contents)
@@ -84,6 +84,12 @@
 2. **GitHub Actions 会自动拉取请求（Pull Request，PR）**  ~ ，大约30s完成。  完成后会在你的仓库有一个README.md文档，根据那里的指导继续操作。
 
 想要看视频指导，可以访问这个YouTube网址，但是国内看不了。 [video tutorial of setting up a fastpages blog](https://youtu.be/L0boq3zqazI) by Abdul Majed. 当然，根据文字指导也没有问题。
+
+3.  你或许会收到一封指导邮件，但由于邮件是英文的，你可以忽视邮件，按以下指导操作。
+
+3.1  生成SSH密钥对。访问[这里]()，选择SRH和4088，点击生成，就会可到两串字符。
+
+3.2  设置仓库（repo）的Secrets。点击[这里]()添加。
 
 
 ## Customizing Blog Posts With Front Matter
