@@ -8,6 +8,8 @@
 ```
 支持中文。
 
+- 当心错误的命名!  很容易将 `YYYY-MM-DD-`的最后一个破折号落下。 并且，破折号后面的一个字符只能是文字而不能是符号。
+
 # 相关资源
 
 - [Jekyll posts](https://jekyllrb.com/docs/posts/)
