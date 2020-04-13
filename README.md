@@ -94,103 +94,52 @@
   
   3.4  启用网站。点击[这里](/settings)找到GitHub Pages，source选择gh-pages branch（如果没有可以先选择其他项，稍后自动生成gh-pages branch后可以再修改）。等待一段时间，GitHub Pages栏生成一个网址，点击即可访问该网站。
 
-## Customizing Blog Posts With Front Matter
+4.  修改_config.yml。需要修改的部分已经在文档内用中文标注。
 
-[Front matter](https://jekyllrb.com/docs/front-matter/) allows you to toggle various options on/off for each blog post, as well as pass metadata to various features of fastpages.
+5.  完成后等待约10分钟，网站自动建立成功。如果之前branch选择不是gh-pages，现在需要更改为gh-pages。
 
-In a notebook, front matter is defined as a markdown cell at the beginning of the notebook with the following contents:
+
+
+## 编写博客
+
+### 编写表头
+
+[表头](https://jekyllrb.com/docs/front-matter/) 允许你设置博客的很多属性。
+
+在Jupyter中，表头是文档中的第一个单元个。并且是markdown格式的单元格。内容如下（可以缺省）：
 
   ```markdown
-  # "Title"
-  > "Awesome summary"
-  - toc: false
-  - branch: master
+  # "标题"
+  > "概要"
+  
+  - toc: true
   - badges: true
   - comments: true
   - categories: [fastpages, jupyter]
   - image: images/some_folder/your_image.png
-  - hide: false
-  - search_exclude: true
-  - metadata_key1: metadata_value1
-  - metadata_key2: metadata_value2
+  - author: A & B
   ```
 
-Similarly, in a markdown document the same front matter would be defined like this at the beginning of the document:
+类似的, 在一个markdown文档中，也需要表头。内容如下：
 
   ```yaml
   ---
-  title: "My Title"
-  summary: "Awesome summary"
-  toc: false
+  title: "标题"
+  summary: "概要"
+  toc: true
   comments: true
   image: images/some_folder/your_image.png
-  hide: false
-  search_exclude: true
   categories: [fastpages, jupyter]
-  metadata_key1: metadata_value1
-  metadata_key2: metadata_value2
   ---
   ```
+注意这里的代码是以YAML格式写的，必须保证正确。
 
-Additional metadata is optional and allows you to set custom [front matter](https://jekyllrb.com/docs/front-matter/).  
+更多[YAML指导](https://rollout.io/blog/yaml-tutorial-everything-you-need-get-started/)请看这里。
 
-Note that anything defined in front matter must be valid YAML.  **Failure to provide valid YAML could result in your page not rendering** in your blog.  For example, if you want a colon in your title you must escape it with double quotes like this:
-
-` - title: "Deep learning: A tutorial"`
-
-See this [tutorial on YAML](https://rollout.io/blog/yaml-tutorial-everything-you-need-get-started/) for more information.
-
-### Configure Title & Summary
-  - Replace `Title`, with your desired title, and `Awesome summary` with your desired summary.
-
-**Note:** It is recommended to enclose these values in double quotes, so that you can escape colons and other characters that may break the YAML parser.
-
-### Table of Contents
-  - `fast_template` will automatically generate a table of contents for you based on [markdown headers](https://guides.github.com/features/mastering-markdown/)!  You can toggle this feature on or off by setting `toc:` to either `true` or `false`.
-
-### Colab, Binder and GitHub Badges
-
-This option works for **notebooks only**
-
-  -  The `branch` field is used to optionally render a link your notebook to Colab and GitHub in your blog post post. It'll default to `master` if you don't specify it in the notebook.
-  - If you do not want to show Colab / GitHub badges on your blog post (perhaps because your repo is private and the links would be broken) set `badges` to `false`.  This defaults to `true`
-  - By default, when you omit this parameter from your front matter, or you set `badges: true`, **all three badges (GitHub, Binder, Colab)** will appear by default. You can adjust these defaults in with the `default_badges` parameter in [Site Wide Configuration Options](#site-wide-configuration-options).
-    - If only want to hide a badge on an individual post, you can set the front matter `hide_{github,colab,binder}_badge: true`.  For example, if you wanted to hide the Binder badge for an individual notebook but you want the other badges to show up, you can set this in your front matter:
-
-      ```yaml
-      - badges: true
-      - hide_binder_badge: true
-      ```
-  - **Note about Binder**: Binder allows you to customize the dependencies and other aspects of the Jupyter Notebook environment for your readers. The easiest way is to add a `requirements.txt` file with common packages you use for all your notebooks at the root of your repository, you can learn more [on the official Binder docs](https://mybinder.readthedocs.io/en/latest/introduction.html).
-
-### Categories
-  - You can have a comma seperated list inside square brackets of categories for a blog post, which will make the post visible on the tags page of your blog's site.  For example:
-
-    In a notebook:
-    
-    ```
-    # "My Title"
-    - categories: [fastpages, jupyter]
-    ```
-
-    In a markdown document:
-
-    ```
-    ---
-    title: "My Title"
-    categories: [fastpages, jupyter]
-    ---
-    ```
-
-  You can see a preview of what this looks like [here](https://fastpages.fast.ai/categories/).
+### 编写其他内容
+  正常编写即可。
 
 
-  - You can toggle the display of tags on/off by setting `show_tags` to `true` or `false` in `_config.yml`:
-
-```yaml
-# Set this to true to display tags on each post
-show_tags: true
-```
 
 ### Enabling Comments
 
