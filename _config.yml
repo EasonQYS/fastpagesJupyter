@@ -2,19 +2,19 @@
 #
 # This config file is meant for settings that affect your whole blog.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you: 学习YAML语法请参考：
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: 虚谷物联
-description: 便捷实用Jupyter Notebooks.
-github_username: EasonQYS
+title: 中文fastpages模板
+description: 便捷实用的博客
+github_username: EasonQYS  # 你的用户名
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "fastpagesJupyter"
 
 # OPTIONAL: override baseurl and url if using a custom domain
-# Note: leave out the trailing / from this value. 
-url: "https://fastpages.fast.ai" # the base hostname & protocol for your site, e.g. http://example.com
+# Note: leave out the trailing / from this value.  不要在最后加斜杠/ 
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 ###########################################################
 #########  Special Instructions for baseurl ###############
@@ -34,28 +34,28 @@ url: "https://fastpages.fast.ai" # the base hostname & protocol for your site, e
 #
 # 3. You must replace the parameter `baseurl` in _action_files/settings.ini with the same value as you set here but WITHOUT QUOTES.
 #
-baseurl: "/fastpagesJupyter" # the subpath of your site, e.g. "/blog".
+baseurl: "/fastpagesJupyter" # the subpath of your site, e.g. "/blog".网站子路径，一般是仓库名
 
-# Github and twitter are optional:
+# Github and twitter are optional:可以在网页底部显示自己的推特和github链接
 minima:
   social_links:
     twitter: 
     github: EasonQYS
 
-# Set this to true to get LaTeX math equation support
+# Set this to true to get LaTeX math equation support 显示LaTeX数学符号
 use_math: true
 
-# Set this to true to display the summary of your blog post under your title on the Home page.
+# Set this to true to display the summary of your blog post under your title on the Home page. 显示概要
 show_description: true
 
-# Set this to true to display image previews on home page, if they exist
+# Set this to true to display image previews on home page, if they exist  显示图片
 show_image: true
 
-# Set this to true to display tags on each post
+# Set this to true to display tags on each post 显示标签
 show_tags: true
 
 # Add your Google Analytics ID here if you have one and want to use it
-google_analytics: UA-57531313-5
+google_analytics: 
 
 exclude:
   - docker-compose.yml
@@ -66,13 +66,18 @@ exclude:
 include:
   - _pages
 
-# This specifies what badges are turned on by default for notebook posts.
+# This specifies what badges are turned on by default for notebook posts.是否启用以下的badges状态提示（以徽章形式显示在标题下方）
 default_badges:
   github: true
+  #链接到GitHub中的该文件
   binder: true
+  #链接到binder，用于运行当前Jupyter文件，完全在云端运行。
   colab: true
+  #Colaboratory 是一个免费的 Jupyter 笔记本环境，不需要进行任何设置就可以使用，并且完全在云端运行。由谷歌部署，国内用不了。
+  #借助 Colaboratory，可以编写和执行代码、保存和共享分析结果，以及利用强大的计算资源，所有这些都可通过浏览器免费使用。
+  #可以参考https://www.jianshu.com/p/a42d69568966
 
-# Everything below here should be left alone. Modifications may break fastpages
+# Everything below here should be left alone. Modifications may break fastpages 以下请勿修改
 future: true
 theme: minima
 plugins:
