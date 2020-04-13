@@ -11,13 +11,13 @@
 
 > 一款简单的博客网站，支持 Jupyter notebooks, Word docs, 以及 Markdown.
 
-原作连接[点这里](https://github.com/fastai/fastpages)
+>原作链接在此：[fastai/fastpages](https://github.com/fastai/fastpages/)，是英文的。
 
 ![](images/diagram.png)
 
 `fastpages` uses [GitHub Actions](https://github.com/features/actions) to simplify the process of creating [Jekyll blog posts](https://jekyllrb.com/) on [GitHub Pages](https://pages.github.com/) from a variety of input formats.
 
-### `fastpages` provides the following features:
+### `fastpages` 提供以下功能:
 
 - Create posts containing code, outputs of code (which can be interactive), formatted text, etc directly from [Jupyter Notebooks](https://jupyter.org/); Notebook posts support features such as:
     - Interactive visualizations made with [Altair](https://altair-viz.github.io/) remain interactive.
@@ -34,10 +34,10 @@
 - Create posts, including formatting and images, directly from Microsoft Word documents.
 - Write posts on your local machine and [preview them with live reload](#running-the-blog-on-your-local-machine).
 
-See below for a more detailed list of features.
+看下去了解更多细节。
 
 
-**[See the demo site](https://fastpages.fast.ai/)**
+**[看看模板网站](https://easonqys.github.io/fastpagesJupyter/)**
 
 ---
 
@@ -77,13 +77,13 @@ See below for a more detailed list of features.
 <!-- /TOC -->
 
 
-## Setup Instructions
+## 初始化指导
 
-1.  Generate a copy of this repo by clicking [on this link](https://github.com/EasonQYS/fastpagesJupyter/generate).  Name your repo anything you like **except** {your-username}.github.io.
+1.  点击 [这个链接](https://github.com/EasonQYS/fastpagesJupyter/generate)生成一个自己的仓库（repository，repo），用于运行博客。  随意给仓库起名字，但是 **请勿使用** {your-username}.github.io.
 
-2. **GitHub Actions will automatically open a PR** on your new repository ~ 30 seconds after the copy is created.  Follow the instructions in that PR to continue.
+2. **GitHub Actions 会自动拉取请求（Pull Request，PR）**  ~ ，大约30s完成。  完成后会在你的仓库有一个README.md文档，根据那里的指导继续操作。
 
-For a live walk-through of the setup steps (with some additional tips) see this [video tutorial of setting up a fastpages blog](https://youtu.be/L0boq3zqazI) by Abdul Majed.
+想要看视频指导，可以访问这个YouTube网址，但是国内看不了。 [video tutorial of setting up a fastpages blog](https://youtu.be/L0boq3zqazI) by Abdul Majed. 当然，根据文字指导也没有问题。
 
 
 ## Customizing Blog Posts With Front Matter
