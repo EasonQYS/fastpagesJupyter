@@ -1,13 +1,15 @@
 ---
 layout: page
-title: About Me
+title: 关于我
 permalink: /about/
 ---
 
-This is where you put the contents of your *About* page. Like all your pages, it's in [Markdown](https://guides.github.com/features/mastering-markdown/) format.
+这是 *About（关于）* 页面。 像其他页面一样, 这是用[Markdown](https://guides.github.com/features/mastering-markdown/)格式书写的。
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+此网站由 **[fastpages](https://github.com/fastai/fastpages)** [^1]提供技术支持。
 
+此网站由 **[EasonQYS](https://github.com/EasonQYS/fastpagesJupyter)** [^1]提供汉化支持。
 
+[^1]:一个除了普通格式外还支持Jupyter的博客。
 
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+[^2]:第一个中文汉化版本。
