@@ -1,21 +1,24 @@
-# Automatically Convert MS Word (*.docx) Documents To Blog Posts
+# 自动将 微软（MicroSoft） Word (*.docx) 文档转换为 Blog Posts（博客）
 
-_Note: You can convert Google Docs to Word Docs by navigating to the File menu, and selecting Download > Microsoft Word (.docx)_
+_提示: 你可以将 Google Docs 通过文件菜单先转换成 Word Docs再上传。具体操作为：在菜单选择 Download > Microsoft Word (.docx)_
 
-[`fastpages`](https://github.com/fastai/fastpages) will automatically convert Word Documents (.docx) saved into this directory as blog posts!.  Furthermore, images in your document are saved and displayed as you would expect on your blog post automatically.
+文档仅支持后缀名为.docx的格式文档，图片可能无法显示（作者表示可以自动显示）。
 
-## Usage
+## 用法
 
-1. Create a Word Document (must be .docx) with the contents of your blog post.
+1. 建立一个Word文档(必须是.docx) ，写好博客内容。
 
-2. Save your file with the naming convention `YYYY-MM-DD-*.docx` into the `/_word` folder of this repo.  For example `2020-01-28-My-First-Post.docx`.  This [naming convention is required by Jekyll](https://jekyllrb.com/docs/posts/) to render your blog post.
-    - Be careful to name your file correctly!  It is easy to forget the last dash in `YYYY-MM-DD-`. Furthermore, the character immediately following the dash should only be an alphabetical letter.  Examples of valid filenames are:
+2. 以 `YYYY-MM-DD-*.docx` 格式命名。上传至仓库的 `/_word` 文件夹。 例如 `2020-01-28-My-First-Post.docx`。
+
+    - 当心错误的命名!  很容易将 `YYYY-MM-DD-`的最后一个破折号落下。 并且，破折号后面的一个字符只能是文字而不能是符号。下面是正确的例子：
 
         ```shell
         2020-01-28-My-First-Post.docx
         2012-09-12-how-to-write-a-blog.docx
         ```
+        支持中文。
 
-    - If you fail to name your file correctly, `fastpages` will automatically attempt to fix the problem by prepending the last modified date of your notebook to your generated blog post. However, it is recommended that you name your files properly yourself for more transparency.
+    - 如果命名错误, `fastpages` 会根据上传时间加原文件名尝试修正。但我们仍然建议您规范命名。
 
-3. Synchronize your files with GitHub by [following the instructions in this blog post](https://www.fast.ai/2020/01/18/gitblog/).
+## 参考资料
+[following the instructions in this blog post](https://www.fast.ai/2020/01/18/gitblog/).
