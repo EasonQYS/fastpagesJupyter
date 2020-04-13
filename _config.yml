@@ -6,8 +6,8 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: 中文fastpages模板
-description: 便捷实用的博客
+title: 中文博客模板
+description: 便捷实用的Jupyter博客网站。此外，还支持 Word 文档，以及 Markdown。
 github_username: EasonQYS  # 你的用户名
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "fastpagesJupyter" #你的仓库名
