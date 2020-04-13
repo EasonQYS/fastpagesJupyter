@@ -7,9 +7,11 @@
 
 [//]: # (END OF BADGES SECTION)
 
-# Welcome To `fastpages`
+# 欢迎使用 `fastpages`
 
-> An easy to use blogging platform, with support for Jupyter notebooks, Word docs, and Markdown.
+> 一款简单的博客网站，支持 Jupyter notebooks, Word docs, 以及 Markdown.
+
+原作连接[点这里](https://github.com/fastai/fastpages)
 
 ![](images/diagram.png)
 
