@@ -88,9 +88,9 @@
 
   3.1  生成SSH密钥对。访问[这里](https://8gwifi.org/sshfunctions.jsp)，选择RSA和4096，点击生成（Generate-SSH-Keys），就会可到两串字符。
 
-  3.2  设置仓库（repo）的Secrets。点击[这里](/settings/secrets)添加new secret。复制3.1中的Private Key至Value栏，包含"---BEGIN RSA PRIVATE KEY---" and "--END RSA PRIVATE KEY---"。在Name栏填写SSH_DEPLOY_KEY（只能是这个名字）。
+  3.2  设置仓库（repo）的Secrets。在当前仓库地址后加/settings/secrets，或者访问settings>secrets，点击添加new secret。复制3.1中的Private Key至Value栏，包含"---BEGIN RSA PRIVATE KEY---" and "--END RSA PRIVATE KEY---"。在Name栏填写SSH_DEPLOY_KEY（只能是这个名字）。
 
-  3.3  设置仓库（repo）的deploy key。点击[这里](/settings/keys)添加deploy key。复制3.1中的Public Key至key栏，name栏随意填写。请注意勾选`Allow write access`。点击Add key保存设置。
+  3.3  设置仓库（repo）的deploy key。在当前仓库地址后加/settings/keys，或者访问settings>Deploy keys，点击添加deploy key。复制3.1中的Public Key至key栏，name栏随意填写。请注意勾选`Allow write access`。点击Add key保存设置。
   
   3.4  启用网站。点击[这里](/settings)找到GitHub Pages，source选择gh-pages branch（如果没有可以先选择其他项，稍后自动生成gh-pages branch后可以再修改）。等待一段时间，GitHub Pages栏生成一个网址，点击即可访问该网站。
 
