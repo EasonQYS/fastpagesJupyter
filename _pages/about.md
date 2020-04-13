@@ -8,7 +8,7 @@ permalink: /about/
 
 此网站由 **[fastpages](https://github.com/fastai/fastpages)** [^1]提供技术支持。
 
-此网站由 **[EasonQYS](https://github.com/EasonQYS/fastpagesJupyter)** [^1]提供汉化支持。
+此网站由 **[EasonQYS](https://github.com/EasonQYS/fastpagesJupyter)** [^2]提供汉化支持。
 
 [^1]:一个除了普通格式外还支持Jupyter的博客。
 
