@@ -2,17 +2,6 @@
   
     
         "post0": {
-            "title": "欢迎使用（Jupyter）",
-            "content": "&#20320;&#22909; . print(&quot;你好！欢迎使用！&quot;) . 你好！欢迎使用！ .",
-            "url": "/fastpagesJupyter/jupyter/%E4%B8%AD%E6%96%87/%E6%AC%A2%E8%BF%8E/2020/04/14/%E6%AC%A2%E8%BF%8E%E4%BD%BF%E7%94%A8-Jupyter.html",
-            "relUrl": "/jupyter/%E4%B8%AD%E6%96%87/%E6%AC%A2%E8%BF%8E/2020/04/14/%E6%AC%A2%E8%BF%8E%E4%BD%BF%E7%94%A8-Jupyter.html",
-            "date": " • Apr 14, 2020"
-        }
-        
-    
-  
-    
-        ,"post1": {
             "title": "Fastpages汉化版使用说明",
             "content": "1 登录自己的github账户，访问：https://github.com/EasonQYS/fastpagesJupyter ，找到下面这个蓝色的字并点击， . . 在自己的账户下生成一个仓库（仓库名不能使用），用于运行网页。 . 2 稍等片刻（约30秒），你的github邮箱会收到一封邮件，指导你接下来的步骤。由于邮件是英文版，请参考README文档。 . 操作过程截图： . . . . 点击Add key后需要输入github密码。 . 3查看Actions，绿色对勾表示初始化完成。（这一步没有意义） . . 4在https://github.com/EasonQYS/fastpagesJupyter/settings settings页面下滑找到 . . 选择master branch，等待https://github.com/EasonQYS/fastpagesJupyter/actions 显示成功。 . 5如果运行正常，会生成一个新的branch，名为gh-pages。需要将网页改至该路径。（若干没有，可以先进行后续操作。稍后在回来做这一步） . . 至此，网站已经可以显示了。 . 6 修改_config.yml . 为了让页面显示更美观，以及修改超链接为正确内容，我们可能要做一下修改。 . 需要修改的部分均已给出中文标注。 . 相关修改参考见截图 . . 若要修改网页标题，则修改 . . 若要修改网页内容，则修改index.html文件。 . 现在网页正常显示了。 . 7 如果没有做第5步，现在做。做完后网站正常显示。 . . 8 上传Jupyter文件 . 所有ipynb文件都在_notebooks目录下，其中的readme要求命名格式为YYYY-MM-DD-*.ipynb，注意，很容易忘记最后一个破折号。 . 但是也有要求，第一个单元格内要以Markdown形式写： . . . 写完上传至_notebooks目录。如果是本地克隆文件夹，那么记得同步至github云端。 . 上传之后等待一段时间，即可在博客上看到这篇文章。 . 9 类似的，Markdown文件在_posts目录下，也能自动转换。 . 同样，有格式要求。（支持中文名） . 当然，少一点也行，这是一个例子： . 在_posts目录下创建正确命名的md文档，写入后保存。若在本地写好，记得同步（克隆）至云端。 . -– . layout: post . title: “Welcome to Jekyll!” . -– . # Welcome . **Hello world**, this is my first Jekyll blog post. . I hope you like it! . 10 此外，_docs还能转换docx文件，方法类似。 . 将文档上传至/_docs目录下即可。 . 11 删帖，删除上述文件即可。 . 遇到的坑： . 1、md文档可以转博客，但是rst文档好像不行。解决方案，将rst文件重命名时后缀改为md。 . 2、若上传多个文档，其中一个报错，同批所有文档都不显示。故每次上传一个文档为佳，利于排查。每个文档生成网页的时间大约在2分钟左右。需要等待至Action成绿色√才表示完成，可以查看网页。 . . 3、可加载网页图片，但不能加载本地图片（文档中自带的图片）。例如下图方式添加的图片不能显示。 . .",
             "url": "/fastpagesJupyter/2020/04/14/fastpages%E6%B1%89%E5%8C%96%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.html",
@@ -23,11 +12,22 @@
     
   
     
-        ,"post2": {
+        ,"post1": {
             "title": "欢迎（ms Word）",
             "content": "欢迎你 . 欢迎你 . 欢迎你 . 欢迎你 . .",
             "url": "/fastpagesJupyter/2020/04/13/%E6%AC%A2%E8%BF%8E-MS-Word.html",
             "relUrl": "/2020/04/13/%E6%AC%A2%E8%BF%8E-MS-Word.html",
+            "date": " • Apr 13, 2020"
+        }
+        
+    
+  
+    
+        ,"post2": {
+            "title": "欢迎使用（Jupyter）",
+            "content": "&#20320;&#22909; . print(&quot;你好！欢迎使用！&quot;) . 你好！欢迎使用！ .",
+            "url": "/fastpagesJupyter/jupyter/%E4%B8%AD%E6%96%87/%E6%AC%A2%E8%BF%8E/2020/04/13/%E6%AC%A2%E8%BF%8E%E4%BD%BF%E7%94%A8-Jupyter.html",
+            "relUrl": "/jupyter/%E4%B8%AD%E6%96%87/%E6%AC%A2%E8%BF%8E/2020/04/13/%E6%AC%A2%E8%BF%8E%E4%BD%BF%E7%94%A8-Jupyter.html",
             "date": " • Apr 13, 2020"
         }
         
