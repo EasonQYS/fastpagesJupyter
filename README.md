@@ -83,7 +83,7 @@
 
 [表头](https://jekyllrb.com/docs/front-matter/) 允许你设置博客的很多属性。
 
-在Jupyter中，表头是文档中的第一个单元个。并且是markdown格式的单元格。内容如下（可以缺省）：
+在Jupyter中，表头是文档中的第一个单元格。并且是markdown格式的单元格。内容如下（可以缺省）：
 
   ```markdown
   # "标题"
