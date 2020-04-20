@@ -55,7 +55,7 @@
 
 ## 初始化指导
 
-1.  点击 [这个链接](https://github.com/EasonQYS/fastpagesJupyter/generate)生成一个自己的仓库（repository，repo），用于运行博客。  随意给仓库起名字，但是 **请勿使用** {your-username}.github.io.
+1.  点击 [这个链接](https://github.com/EasonQYS/fastpagesJupyter/generate) 生成一个自己的仓库（repository，repo），用于运行博客。  随意给仓库起名字，但是 **请勿使用** {your-username}.github.io.
 
 2. **GitHub Actions 会自动拉取请求（Pull Request，PR）**  ~ ，大约30s完成。  完成后会在你的仓库有一个README.md文档，根据那里的指导继续操作。
 
