@@ -65,7 +65,7 @@
 
  - 3.1  生成SSH密钥对。访问[这里](https://8gwifi.org/sshfunctions.jsp)，选择RSA和4096，点击生成（Generate-SSH-Keys），就会可到两串字符。
 
- - 3.2  设置仓库（repo）的Secrets。在当前仓库地址后加/settings/secrets，或者访问settings>secrets，点击添加new secret。复制3.1中的Private Key至Value栏，包含"---BEGIN RSA PRIVATE KEY---" and "--END RSA PRIVATE KEY---"。在Name栏填写SSH_DEPLOY_KEY（只能是这个名字）。
+ - 3.2  设置仓库（repo）的Secrets。在当前仓库地址后加/settings/secrets，或者访问settings>secrets，点击添加new secret。复制3.1中的Private Key至Value栏，包含"---BEGIN RSA PRIVATE KEY---" 和 "--END RSA PRIVATE KEY---"。在Name栏填写SSH_DEPLOY_KEY（只能是这个名字）。
 
  - 3.3  设置仓库（repo）的deploy key。在当前仓库地址后加/settings/keys，或者访问settings>Deploy keys，点击添加deploy key。复制3.1中的Public Key至key栏，name栏随意填写。请注意勾选`Allow write access`。点击Add key保存设置。
   
