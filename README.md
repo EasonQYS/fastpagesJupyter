@@ -116,9 +116,10 @@
 ### 编写其他内容
   正常编写即可。
   
-  需要说明的是Jupyter和Markdown插入图片的时候需要先上传图片，再引用到文档。例如我将图片传至根目录下的images文件夹，那么在Jupyter和Markdown中写以下代码即可引用。
-  ···
+  需要说明的是Jupyter和Markdown**插入图片**的时候需要先上传图片，再引用到文档。例如我将图片传至根目录下的images文件夹，那么在Jupyter和Markdown中写以下代码即可引用。
+  ```
   ![描述](images/filename.jpg "图片标题")
+  ```
   
 # 查看英文原生文档
 更多内容查阅原生文档：[fastai/fastpages](https://github.com/fastai/fastpages/)。
