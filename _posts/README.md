@@ -10,6 +10,20 @@
 
 - 当心错误的命名!  很容易将 `YYYY-MM-DD-`的最后一个破折号落下。 并且，破折号后面的一个字符只能是文字而不能是符号。
 
+在Markdown文档中，最上面的几行作为表头。内容如下（可以缺省部分内容）：
+
+  ```yaml
+  ---
+  title: "标题"
+  summary: "概要"
+  toc: true
+  comments: true
+  image: images/some_folder/your_image.png
+  categories: [fastpages, jupyter]
+  ---
+  ```
+注意这里的代码是以YAML格式写的，必须保证正确。
+
 # 相关资源
 
 - [Jekyll posts](https://jekyllrb.com/docs/posts/)
