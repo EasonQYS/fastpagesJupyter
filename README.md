@@ -48,7 +48,7 @@
 		- [编写表头](#编写表头)
 		- [编写其他内容](#编写其他内容)
 - [查看英文原生文档](#查看英文原生文档)
-- [FAQ](#faq)
+- [问答](#faq)
 
 <!-- /TOC -->
 
@@ -125,7 +125,7 @@
 更多内容查阅原生文档：[fastai/fastpages](https://github.com/fastai/fastpages/)。
 
 # FAQ
-
+# 问答（英文）
 - **Q:** Where are the markdown files in `_posts/` that are generated from my Jupyter notebooks or word documents?  
 
 - **A:** The GitHub Actions workflow in this repo converts your notebook and word documents to markdown on the fly before building your site, but never commits these intermediate markdown files to this repo.  This is in order to save you from the annoyance of your local environment being constantly out of sync with your repository.  You can optionally see these intermediate markdown files by setting the `BOOL_SAVE_MARKDOWN` and `SSH_DEPLOY_KEY` inputs to the fastpages action in your `.github/workflows/ci.yaml` file as follows:
